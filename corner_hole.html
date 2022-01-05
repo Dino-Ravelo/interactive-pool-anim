@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+            <defs>
+              <clipPath id="clip-path">
+                <rect id="mask" width="1920" height="1080" fill="#fff" stroke="#707070" stroke-width="0"/>
+              </clipPath>
+            </defs>
+            <g id="whole_masked" clip-path="url(#clip-path)">
+              <g id="whole">
+                <g id="Table">
+                  <g id="Frame">
+                    <g id="Brown" fill="#4d342f" stroke="#707070" stroke-width="0">
+                      <rect width="3933" height="2212" rx="102" stroke="none"/>
+                      <rect x="0.5" y="0.5" width="3932" height="2211" rx="101.5" fill="none"/>
+                    </g>
+                    <g id="Dark_Green" data-name="Dark Green" transform="translate(147 147)" fill="#368e3c" stroke="#707070" stroke-width="0">
+                      <rect width="3639" height="1918" rx="102" stroke="none"/>
+                      <rect x="0.5" y="0.5" width="3638" height="1917" rx="101.5" fill="none"/>
+                    </g>
+                    <rect id="Light_Green" data-name="Light Green" width="3528" height="1807" rx="102" transform="translate(203 203)" fill="#4baf4f"/>
+                  </g>
+                  <g id="Holes" transform="translate(114.422 53.679)">
+                    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(-0.422 60.321)" stroke="#707070" stroke-width="0">
+                      <circle cx="102.5" cy="102.5" r="102.5" stroke="none"/>
+                      <circle cx="102.5" cy="102.5" r="102" fill="none"/>
+                    </g>
+                    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1713.579 0.321)" stroke="#707070" stroke-width="0">
+                      <circle cx="102.5" cy="102.5" r="102.5" stroke="none"/>
+                      <circle cx="102.5" cy="102.5" r="102" fill="none"/>
+                    </g>
+                    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1754.579 1900.321)" stroke="#707070" stroke-width="0">
+                      <ellipse cx="102.5" cy="102" rx="102.5" ry="102" stroke="none"/>
+                      <ellipse cx="102.5" cy="102" rx="102" ry="101.5" fill="none"/>
+                    </g>
+                    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(-0.422 1839.321)" stroke="#707070" stroke-width="0">
+                      <circle cx="102.5" cy="102.5" r="102.5" stroke="none"/>
+                      <circle cx="102.5" cy="102.5" r="102" fill="none"/>
+                    </g>
+                    <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(3498.578 60.321)" stroke="#707070" stroke-width="0">
+                      <circle cx="102.5" cy="102.5" r="102.5" stroke="none"/>
+                      <circle cx="102.5" cy="102.5" r="102" fill="none"/>
+                    </g>
+                    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(3498.578 1839.321)" stroke="#707070" stroke-width="0">
+                      <circle cx="102.5" cy="102.5" r="102.5" stroke="none"/>
+                      <circle cx="102.5" cy="102.5" r="102" fill="none"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="Ball" stroke="#707070" stroke-width="0">
+                  <circle cx="74" cy="74" r="74" stroke="none"/>
+                  <circle cx="74" cy="74" r="73.5" fill="none"/>
+                </g>
+              </g>
+            </g>
+          </svg>          
+        <style>
+            :root {
+                --ball-color: #ffffff;
+                --top-left: rotate(0); 
+                --top-right: rotate(0) scaleX(-1);
+                --bottom-right: scaleX(-1) scaleY(-1);
+                --bottom-left: scaleY(-1);
+            }
+
+            #whole_masked {
+                transform-origin: center;
+                transform: var(--bottom-left);
+            }
+
+            #Ball {
+                fill: var(--ball-color);
+            }
+
+            #Ball {
+                animation: fadeInUp 5s ease forwards infinite;
+            }
+
+            @keyframes fadeInUp {
+                0% {
+                    transform: translateX(100%) translateY(100%);
+                }
+
+                70% {
+                    transform: translateX(8%) translateY(14%);
+                    opacity: 1;
+                }
+
+                100% {
+                    transform: translateX(7.5%) translateY(13.5%);
+                    opacity: 0;
+                }
+            }
+        </style>
+        <script src="" async defer></script>
+    </body>
+</html>
