@@ -75,6 +75,7 @@
         </div>
         <style>
             :root {
+                /* Couleur de la boule en code hex*/
                 --ball-color: #ffffff;
                 --top-left: rotate(0); 
                 --top-right: rotate(0) scaleX(-1);
@@ -87,17 +88,20 @@
             }
 
             .screen {
-                transform-origin: center;
-                transform: var(--top-left);
-                z-index: -1;
+              transform-origin: center;
+                /* Quel trou de quel coin : 
+              en haut à gauche = --top-left
+              en haut à droite = --top-right
+              en bas à gauche = --bottom-left 
+              en bas à droite = --bottom-right */
+              transform: var(--top-left);
+              z-index: -1;
             }
 
             .container {
               position: absolute;
               top: 25%;
               left: 12%;
-              /* top: 50%;
-              left: 50%; */
               transform: translate(-50%, -50%);
             }
 
@@ -147,6 +151,7 @@
 
             @keyframes fadeInUp {
                 0% {
+                    /* Coordonnées de départ de la boule */
                     transform: translateX(100%) translateY(100%);
                 }
 
@@ -165,10 +170,10 @@
         <script>
           const containerSlot = document.querySelector(".slot");
           const btnConfettis = document.querySelector(".btn-confettis");
+          /* Différents émojis qui s'afficheront dans l'explosion */  
           const emojis = ["💯", "⭐", "🔥", "💥"];
 
           window.onload = setTimeout(fiesta, 4000);
-          // btnConfettis.addEventListener("click", fiesta);
 
           function fiesta() {
             
