@@ -69,39 +69,46 @@
           </svg>          
         <style>
             :root {
-                --ball-color: #ffffff;
-                --top-left: rotate(0); 
-                --top-right: rotate(0) scaleX(-1);
-                --bottom-right: scaleX(-1) scaleY(-1);
-                --bottom-left: scaleY(-1);
+              /* Couleur de la boule en code hex*/
+              --ball-color: #ffffff;
+              --top-left: rotate(0); 
+              --top-right: rotate(0) scaleX(-1);
+              --bottom-right: scaleX(-1) scaleY(-1);
+              --bottom-left: scaleY(-1);
             }
 
             #whole_masked {
-                transform-origin: center;
-                transform: var(--bottom-left);
+              transform-origin: center;
+              /* Quel trou de quel coin : 
+              en haut à gauche = --top-left
+              en haut à droite = --top-right
+              en bas à gauche = --bottom-left 
+              en bas à droite = --bottom-right */
+              transform: var(--top-left);
             }
 
             #Ball {
-                fill: var(--ball-color);
+              fill: var(--ball-color);
             }
 
             #Ball {
-                animation: fadeInUp 5s ease forwards infinite;
+                animation: fadeInUp 5s ease forwards;
             }
 
             @keyframes fadeInUp {
                 0% {
-                    transform: translateX(100%) translateY(100%);
+                  /* Coordonnées de départ de la boule */
+                  transform: translateX(100%) translateY(100%);
                 }
 
                 70% {
-                    transform: translateX(8%) translateY(14%);
-                    opacity: 1;
+                  transform: translateX(8%) translateY(14%);
+                  opacity: 1;
                 }
 
                 100% {
-                    transform: translateX(7.5%) translateY(13.5%);
-                    opacity: 0;
+                  transform: translateX(7.5%) translateY(13.5%);
+                  opacity: 0;
                 }
             }
         </style>
