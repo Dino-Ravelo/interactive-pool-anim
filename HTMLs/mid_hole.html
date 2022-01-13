@@ -48,6 +48,7 @@
       </svg>                  
         <style>
             :root {
+                /*Couleur de la boule en code hex*/
                 --ball-color: #ffffff;
                 --top-mid: scaleY(1);
                 --bottom-mid: scaleY(-1);
@@ -55,6 +56,9 @@
 
             #Close_up_-_TM_Hole {
                 transform-origin: center;
+                /*Quel trou :
+                trou du milieu du haut = --top-mid
+                trou du milieu du bas = --bottom-mid*/
                 transform: var(--bottom-mid);
             }
 
@@ -63,11 +67,12 @@
             }
 
             #Ball {
-                animation: fadeInUp 4s ease forwards infinite;
+                animation: fadeInUp 4s ease forwards;
             }
 
             @keyframes fadeInUp {
                 0% {
+                    /*Coordonnées de départ de la boule*/
                     transform: translateX(98.5%) translateY(100%);
                 }
 
